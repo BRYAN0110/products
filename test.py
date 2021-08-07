@@ -1,4 +1,16 @@
 test = []
+with open('test.csv','r',encoding = 'utf-8') as f:
+	for line in f:
+
+		t = line.strip().split(',')
+		print(t)
+
+		# if '學生,成績' in line:
+		#	continue
+		# name, grade = line.strip().split(',')
+		# test.append([name, grade]) 
+
+
 while True:
 	name = input('請輸入姓名:')
 	if name == 'q':
